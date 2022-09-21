@@ -1,0 +1,11 @@
+$icon-size: (
+    "sm": 16px,
+    "md": 24px,
+    "lg": 32px
+);
+
+@each $key, $val in $icon-size {
+    .icon-size__#{$key} {
+        font-size: #{val};
+    }
+}
