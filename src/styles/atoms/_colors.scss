@@ -10,3 +10,9 @@ $color-bg-r: #5e1418;
 $color-bg-variant-r: #c90919;
 $color-primary-r: #ee4908;
 $color-primary-variant-r: rgba(168, 39, 7, 0.4);
+
+body {
+    background: $color-bg-r;
+    color: $color-white;
+    background-image: url(../../assets/bg-texture.png);
+}
