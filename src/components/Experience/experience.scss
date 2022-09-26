@@ -1,0 +1,82 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.experience {
+    @include container($xl);
+    @include col(10);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    @include breakpoint($xl) {
+        @include container($md);
+        grid-template-columns: 1fr;
+    }
+    @include breakpoint($sm) {
+        @include container($xs);
+        width: auto;
+        @include col(12);
+        margin-left: -40px;
+    }
+    &__type {
+        @include col(12);
+        background: $color-bg-variant-r;
+        padding: 2.4rem 4rem 2.4rem 2.4rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: $transition;
+        &:hover {
+            background: transparent;
+            border-color: var(--color-primary-variant);
+            cursor: default;
+            & > h3 {
+                color: white;
+            }
+        }
+
+        & > h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: $color-bg-r;
+        }
+    }
+
+    &__frontend {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 2rem;
+        place-items: center;
+    }
+
+    &__backend {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 2rem;
+        place-items: center;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        & > div {
+            width: 100px;
+        }
+
+        & > div > h4 {
+            text-align: left;
+        }
+
+        & > div > small {
+            color: $color-light;
+        }
+        
+        &__icon {
+            @include pseudo();
+            margin-top: 5px;
+            color: $color-yellow;
+        }
+    }
+}

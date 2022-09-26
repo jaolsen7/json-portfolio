@@ -1,0 +1,91 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+    @include container($xl);
+    @include col(10);
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    @include breakpoint($md) {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    &__me {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 2rem;
+        background: linear-gradient(45deg, transparent, $color-primary-r, transparent);
+        @include breakpoint($md) {
+            width: 65%;
+            margin: 2rem auto 4rem;
+        }
+
+        &__image {
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+            overflow: hidden;
+            transform: rotate(10deg);
+            transition: $transition;
+
+            &:hover {
+                transform: rotate(0);
+            }
+        }
+    }
+    
+    &__content {  
+        @include breakpoint($md) {
+            text-align: center;
+        }
+          
+        & > p {
+            margin: 2rem 0 2.6rem;
+            color: $color-light;
+            @include breakpoint($md) {
+                margin: 1.5rem 0;
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        @include breakpoint($md) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        background: $color-bg-variant-r;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+        text-align: center;
+        transition: $transition;
+
+        &:hover {
+            background: transparent;
+            border-color: $color-primary-variant-r;
+            cursor: default;
+        }
+
+        & > h5 {
+            font-size: 1rem;
+        }
+
+        & > small {
+            font-size: 0.7rem;
+            color: $color-light;
+        }
+    }
+
+    &__icon {
+        color: $color-yellow;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+}

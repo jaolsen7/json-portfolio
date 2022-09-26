@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+$Poppins: "Poppins", sans-serif;
+
+// colors
+$color-bg-b: #1f1f38;
+$color-bg-variant-b: #2c2c6c;
+$color-primary-b: #4db5ff;
+$color-primary-variant-b: rgba(77, 181, 255, 0.4);
+
+$color-white: #fff;
+$color-light: rgba(255, 255, 255, 0.6);
+$color-yellow: rgb(218, 215, 10);
+
+$color-bg-r: #5e1418;
+$color-bg-variant-r: #c90919;
+$color-primary-r: #ee4908;
+$color-primary-variant-r: rgba(168, 39, 7, 0.4);
+
+$bg-image: url('../assets/bg-texture.png');
+
+// transition
+$transition:  all 400ms ease;
+
+// spacing
+$spacing-base: 16px;
+
+// breakpoints
+$xs: 400px;
+$sm: 646px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1400px;
+
+// icons
+$icon-size: (
+    "sm": 16px,
+    "md": 24px,
+    "lg": 32px
+);
+
+// typography
+$font-size: (
+    "sm": 24px,
+    "md": 32px,
+    "lg": 40px
+);

@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.portfolio {
+    @include container($sm);
+
+    &__item {
+        background: $color-bg-variant-r;
+        text-align: center;
+        padding: 2rem 5rem 2rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        user-select: none;
+
+        & > h3 {
+            margin: 1rem 0 0;
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            border-radius: 2rem;
+            margin: 0 auto 1rem;
+            border: 0.4rem solid $color-light;
+        }
+
+        &__description {
+            margin-bottom: 1rem;
+            color: $color-light;
+        }
+
+        &__cta {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            & > a:first-child {
+                border-color: $color-white;
+                color: $color-bg-r;
+            }
+        }
+    }
+}
