@@ -1,8 +1,8 @@
 {
+  "homepage": "https://jaolsen7.github.io/json-portfolio",
   "name": "json-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jaolsen7.github.io/json-portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -41,10 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": "v14.17.5",
-    "npm": "6.14.14"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
