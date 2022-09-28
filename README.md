@@ -2,6 +2,8 @@
 
 The goal of this project is to provide a simple yet aesthetically pleasing design for my professional portfolio. The site is a single-page, mobile-responsive application that utilizes HTML, SCSS, ReactJS, SwiperJS, EmailJS and React Icons.
 
+## [Try it yourself!](https://jaolsen7.github.io/json-portfolio/)
+
 ## Demo
 
 ![demo-gif](json-portfolio.gif)
