@@ -26,6 +26,9 @@
                 color: white;
             }
         }
+        @include breakpoint($sm) {
+            padding: 2.4rem;
+        }
 
         & > h3 {
             text-align: center;
