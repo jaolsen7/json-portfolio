@@ -11,12 +11,8 @@
         @include container($md);
         grid-template-columns: 1fr;
     }
-    @include breakpoint($sm) {
-        @include container($xs);
-        @include col(12);
-    }
+
     &__type {
-        @include col(12);
         background: $color-bg-variant-r;
         padding: 2.4rem 4rem 2.4rem 2.4rem;
         border-radius: 2rem;

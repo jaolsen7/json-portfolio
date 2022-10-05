@@ -62,7 +62,7 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio__item__cta">
                   <a href={github} className="btn" target="_blank" rel="noreferrer">Github</a>
-                  <a href={demo} className="btn btn-primary" target="blank" rel="noreferrer">Live Demo</a>
+                  <a href={demo} className="btn btn-primary" target="blank" rel="noreferrer">Demo</a>
                 </div>
               </SwiperSlide>
             )
