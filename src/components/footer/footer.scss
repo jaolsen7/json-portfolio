@@ -22,6 +22,10 @@
         justify-content: center;
         gap: 2rem;
         margin: 0 auto 2rem;
+        @include breakpoint($sm) {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
 
         & > li > a {
             color: $color-white;
