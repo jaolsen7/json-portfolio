@@ -8,9 +8,11 @@
     grid-template-columns: 30% 58%;
     gap: 12%;
     @include breakpoint($lg) {
-        @include col(12);
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    @include breakpoint($sm) {
+        @include container($sm);
     }
 
     &__options {
