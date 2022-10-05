@@ -11,19 +11,12 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    @include breakpoint($sm) {
-        @include container($sm);
-    }
+
 
     &__options {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
-        @include breakpoint($lg) {
-            padding: 1.2rem 4rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
 
     &__option {
