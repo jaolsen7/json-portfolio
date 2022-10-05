@@ -24,7 +24,7 @@ const data = [
     title: "A. Rodriguez Portfolio",
     description: "React front-end only and mobile-responsive application for my roommate's professional portfolio. The goal was to have a simple, yet aesthetically pleasing page using plain CSS. This was a template for my personal portfolio, which replaces CSS with SCSS to demonstrate what I learned at my internship.",
     github: "https://github.com/jaolsen7/arod-portfolio",
-    demo: "https://www.yahoo.com"
+    demo: "https://jaolsen7.github.io/arod-portfolio/"
   },
   {
     id: 3,
