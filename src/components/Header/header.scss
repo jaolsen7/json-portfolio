@@ -57,11 +57,9 @@ header {
     }
 
     &__me {
-        background: linear-gradient($color-primary-r, transparent);
+        background: linear-gradient($color-bg-variant-r, transparent);
         width: 25rem;
         height: 28rem;
-        // position: absolute;
-        // left: ;
         margin-top: 4rem;
         border-radius: 12rem 12rem 0 0;
         overflow: hidden;
